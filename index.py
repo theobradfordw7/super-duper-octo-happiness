@@ -11,7 +11,7 @@ def start_game():
         start_game()
 
 def bear_room():
-    print("There is a giant bear here eating honey! What do you do?")
+    print("There is a giant bear here eating honey, you lose")
     # Add more choices here...
 
 def treasure_room():
