@@ -1,20 +1,28 @@
-def start_game():
-    print("You are at a crossroads. Do you want to go left or right?")
-    choice = input("> ").lower()
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Adventure Game</title>
+    <!-- Link to the CSS file for styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <!-- Area where the story text and game messages are displayed -->
+        <div id="game-output" class="output-area">
+            <p>Welcome to the adventure! Type 'start' to begin.</p>
+        </div>
 
-    if choice == "left":
-        bear_room()
-    elif choice == "right":
-        treasure_room()
-    else:
-        print("Invalid choice. Try again.")
-        start_game()
+        <!-- Section for user input and controls -->
+        <div class="input-area">
+            <label for="user-input">></label>
+            <input type="text" id="user-input" autofocus>
+            <button id="submit-btn">Go</button>
+        </div>
+    </div>
 
-def bear_room():
-    print("There is a giant bear here eating honey, you lose")
-    # Add more choices here...
-
-def treasure_room():
-    print("You found the gold! You win!")
-
-start_game()
+    <!-- Link to the JavaScript file that contains the game logic -->
+    <script src="game.js"></script>
+</body>
+</html>
